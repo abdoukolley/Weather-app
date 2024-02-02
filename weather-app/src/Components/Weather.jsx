@@ -22,7 +22,7 @@ const Weather = () => {
       return 0;
     }
     // Fetching Data
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&type=accurate&APPID=dd94f859a0e52d6e4767fddf735f04a7`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&type=accurate&APPID=dd94f859a0e52d6e4767fddf735f04a7`;
     let response = await fetch(url);
     let data = await response.json();
     const humidity = document.getElementsByClassName("humidity-percent");
