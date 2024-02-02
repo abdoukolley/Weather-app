@@ -58,7 +58,7 @@ const Weather = () => {
   return (
     <div className="container">
       <div className="top-bar">
-        <input type="text" className="cityInput" placeholder="Search" onKeyPress={handleKeyPress}/>
+        <input type="text" className="cityInput" placeholder="Search" onKeyDown={handleKeyPress}/>
         <div className="search-icon" onClick={search}>
           <img src={search_icon} alt="search"/>
         </div>
